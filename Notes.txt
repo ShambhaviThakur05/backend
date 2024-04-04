@@ -1,0 +1,38 @@
+Postgress Database
+
+Neon - Postgress ki services provide krta hai jaise mongoDb ka compass hai , yeh open source hai
+ek server pr hum backend or database nhi bna skte kyunki storage ki dikkat aati hai isliye databse cloud pr store  ie kisi or server pr krare jisme hum postgress use kre  
+postgress ki services hum neon ke through use krte hai
+
+render- it is for deployment
+
+In this project we are using three server one for frontend ont for db and one for backend
+
+We use a package Prisma , postgress database se interact krne ke liye , delete update and read
+
+npm i prisma express
+npx prisma init
+
+Prisma ORM hai
+
+ORM - object relational mapper(object se relation ki trf mapping kre hai)
+        jaise js mai object the and mongo db mai bhi object mai store hota tha but isme humne object ko table(row) 
+        ki form mai convert krna hai
+
+DB ka url jo .env file mai hai vo neon se uthaya hai
+
+
+Day 2 -
+
+run command npx prisma generate
+npx prisma generate dev -to make tables 
+node servere.js
+
+Day -3
+
+npx prisma studio - prisma studio is a graphical user interface like mongodb where you can add delete your data
+
+one to one - foreign key used
+one to many - foreign key used
+many to many - foreign key not used as we make another table
+
